@@ -1,1 +1,37 @@
 @charset "utf-8";
+
+@mixin inner($w:1140px) {
+    width: 90%;
+    max-width: $w;
+    margin: 0 auto;
+}
+
+body{
+    color: #a5a5a5;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.025em;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.card{
+
+    &__title{
+        margin-bottom: 20px;
+        color: #2b2b2b;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+
+.update{
+
+    &__inner{
+        @include inner();
+    }
+}

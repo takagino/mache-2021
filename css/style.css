@@ -1,2 +1,26 @@
+body {
+  color: #a5a5a5;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.025em;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.card__title {
+  margin-bottom: 20px;
+  color: #2b2b2b;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.update__inner {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */
