@@ -11,6 +11,13 @@ img {
   vertical-align: bottom;
 }
 
+.card {
+  width: 30%;
+}
+.card__body {
+  padding: 25px 20px 35px 20px;
+  background-color: #f4f4f4;
+}
 .card__title {
   margin-bottom: 20px;
   color: #2b2b2b;
