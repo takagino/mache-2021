@@ -22,6 +22,11 @@ img{
 .card{
     width: 30%;
 
+    &:hover .card__pic::after{
+        top: 0;
+        transform: skewY(0);
+    }
+
     &__body{
         padding: 25px 20px 35px 20px;
         background-color: #f4f4f4;
@@ -37,22 +42,19 @@ img{
     &__pic{
         position: relative;
         overflow: hidden;
-    }
 
-    &__screen{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 95%;
-        left: 0;
-        background-color: #ED145B;
-        opacity: 0.8;
-        transform: skewY(1deg);
-        transition: top 0.3s;
-
-        &:hover{
-            top: 0;
-            transform: skewY(0);
+        &::after{
+            display: block;
+            content: "虫眼鏡";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 95%;
+            left: 0;
+            background-color: #ED145B;
+            opacity: 0.8;
+            transform: skewY(1deg);
+            transition: top 0.3s;
         }
     }
 }

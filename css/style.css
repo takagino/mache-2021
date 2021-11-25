@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   color: #a5a5a5;
   font-size: 14px;
@@ -14,6 +15,11 @@ img {
 .card {
   width: 30%;
 }
+.card:hover .card__pic::after {
+  top: 0;
+  -webkit-transform: skewY(0);
+          transform: skewY(0);
+}
 .card__body {
   padding: 25px 20px 35px 20px;
   background-color: #f4f4f4;
@@ -28,7 +34,9 @@ img {
   position: relative;
   overflow: hidden;
 }
-.card__screen {
+.card__pic::after {
+  display: block;
+  content: "虫眼鏡";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -40,11 +48,6 @@ img {
           transform: skewY(1deg);
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
-}
-.card__screen:hover {
-  top: 0;
-  -webkit-transform: skewY(0);
-          transform: skewY(0);
 }
 
 .update__inner {
