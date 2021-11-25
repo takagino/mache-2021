@@ -36,14 +36,17 @@ img {
 }
 .card__pic::after {
   display: block;
-  content: "虫眼鏡";
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 900;
+  font-size: 30px;
+  color: #fff;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 95%;
   left: 0;
-  background-color: #ED145B;
-  opacity: 0.8;
+  background-color: rgba(237, 20, 91, 0.8);
   -webkit-transform: skewY(1deg);
           transform: skewY(1deg);
   -webkit-transition: top 0.3s;
