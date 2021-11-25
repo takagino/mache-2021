@@ -36,11 +36,15 @@ img {
   left: 0;
   background-color: #ED145B;
   opacity: 0.8;
+  -webkit-transform: skewY(1deg);
+          transform: skewY(1deg);
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
 }
 .card__screen:hover {
   top: 0;
+  -webkit-transform: skewY(0);
+          transform: skewY(0);
 }
 
 .update__inner {

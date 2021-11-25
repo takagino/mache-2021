@@ -20,7 +20,6 @@ img{
 }
 
 .card{
-
     width: 30%;
 
     &__body{
@@ -48,10 +47,12 @@ img{
         left: 0;
         background-color: #ED145B;
         opacity: 0.8;
+        transform: skewY(1deg);
         transition: top 0.3s;
 
         &:hover{
             top: 0;
+            transform: skewY(0);
         }
     }
 }
