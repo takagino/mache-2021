@@ -15,7 +15,11 @@ img {
 .card {
   width: 30%;
 }
-.card:hover .card__pic::after {
+.card__link {
+  color: #a5a5a5;
+  text-decoration: none;
+}
+.card__link:hover .card__pic::after {
   top: 0;
   -webkit-transform: skewY(0);
           transform: skewY(0);
@@ -35,7 +39,15 @@ img {
   overflow: hidden;
 }
 .card__pic::after {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Font Awesome 5 Free";
   content: "";
   font-weight: 900;

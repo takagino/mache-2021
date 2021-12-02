@@ -22,9 +22,14 @@ img{
 .card{
     width: 30%;
 
-    &:hover .card__pic::after{
-        top: 0;
-        transform: skewY(0);
+    &__link{
+        color: #a5a5a5;
+        text-decoration: none;
+
+        &:hover .card__pic::after{
+            top: 0;
+            transform: skewY(0);
+        }
     }
 
     &__body{
@@ -44,7 +49,9 @@ img{
         overflow: hidden;
 
         &::after{
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: "Font Awesome 5 Free";
             content: '\f002';
             font-weight: 900;
