@@ -80,6 +80,39 @@ img {
   transition: top 0.3s;
 }
 
+.about {
+  position: relative;
+  overflow: hidden;
+  background-color: #f4f4f4;
+}
+.about::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100px;
+  background-color: #ED145B;
+  -webkit-transform: skewY(-1deg);
+          transform: skewY(-1deg);
+  position: absolute;
+  top: -80px;
+  left: 0;
+}
+.about__inner {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  padding: 100px 0;
+}
+.about__content {
+  width: 41.2280701754%;
+}
+.about__pic {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
 .update__inner {
   width: 90%;
   max-width: 1140px;
