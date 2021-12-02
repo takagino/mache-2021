@@ -6,6 +6,13 @@
     margin: 0 auto;
 }
 
+@mixin flex($j:space-between, $a:flex-start){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $j;
+    align-items: $a;
+}
+
 body{
     color: #a5a5a5;
     font-size: 14px;
@@ -20,7 +27,6 @@ img{
 }
 
 .card{
-    width: 30%;
 
     &__link{
         color: #a5a5a5;
@@ -74,5 +80,13 @@ img{
 
     &__inner{
         @include inner();
+    }
+
+    &__list{
+        @include flex();
+    }
+
+    &__item{
+        width: 32%;
     }
 }
