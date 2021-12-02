@@ -26,6 +26,27 @@ img{
     vertical-align: bottom;
 }
 
+.outline{
+
+    margin-bottom: 80px;
+
+    &__title{
+        margin-bottom: 45px;
+        color: #2b2b2b;
+        font-size: 38px;
+        font-weight: normal;
+        line-height: 1.2;
+
+        &::after{
+            display: block;
+            content: "";
+            width: 200px;
+            margin-top: 20px;
+            border-bottom: 2px solid #ED145B;
+        }
+    }
+}
+
 .card{
 
     &__link{
